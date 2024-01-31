@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keen Peacemaker Designs Form</title>
+    <style>
+        h1{
+            color: white;
+            text-align: center;
+        }
+        a{
+            padding:10px;
+            color:black;
+        }
+        a:hover{
+            color:greenyellow;
+            cursor: pointer;
+
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: brown;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(172, 255, 47, 0.678);
+            border-radius: 3px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: brown;
+        }
+        .choices, .experience, .gender{
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+
+
+        .artstyle {
+            font-weight: bold;
+            color:brown;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="reset"],
+        input[type="submit"] {
+            background-color: brown;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        input[type="reset"]:hover,
+        input[type="submit"]:hover {
+            background-color: rgba(169, 86, 86, 0.779);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Krishna Patel's Keen Peacemaker || ITIS 3135
+        </h1>
+        <nav>
+            <div class="nav1">
+                <a href = "index.html"> Home </a> ||
+                <a href = "introduction.html"> Introduction </a> ||
+                <a href = "contract.html"> Contract </a> ||
+                <a href = "tables.html"> Table </a> ||
+                <a href = "forms.html"> Form </a>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Activity #3 HTML Forms</h1>
+
+        <form action="#" method="post">
+            
+            <h2>Keen Peacemaker Designs</h2>
+
+            <label for="name" class="artstyle">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="phone" class="artstyle">Phone:</label>
+            <input type="tel" id="phone" name="telephone" required placeholder="Enter your phone number">
+
+            <label for="email" class="artstyle">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+            <div class="choices">
+                <label class="artstyle">Art Style:</label><br>
+                <input type="checkbox" id="interest1" name="interest1" value="interest1">
+                <label for="interest1">Painting</label><br>
+                <input type="checkbox" id="interest2" name="interest2" value="interest2">
+                <label for="interest2">Sculpting</label><br>
+                <input type="checkbox" id="interest3" name="interest3" value="interest3">
+                <label for="interest3">Drawing</label><br>
+                <input type="checkbox" id="interest3" name="interest3" value="interest3">
+                <label for="interest4">Printmaking</label><br>
+                <input type="checkbox" id="interest4" name="interest4" value="interest4">
+                <label for="interest5">Photography</label><br>
+                <input type="checkbox" id="interest5" name="interest5" value="interest5">
+                <label for="interest6">Digital Art</label><br>
+                <input type="checkbox" id="interest6" name="interest6" value="interest6">
+                <label for="interest6">Mixed Media</label><br>
+                <input type="checkbox" id="interest7" name="interest7" value="interest7">
+                <label for="interest7">Textile Art</label><br>
+            </div>
+
+            <div class="expereince">  
+                <label class="artstyle">Experience:</label><br>
+
+                <input type="radio" id="y1" name="expereince" value="y1">
+                <label for="y1">0-4 years</label><br>
+
+                <input type="radio" id="y2" name="expereince" value="y2">
+                <label for="y2">5-9 years</label><br>
+
+                <input type="radio" id="y3" name="expereince" value="y3">
+                <label for="y3">10-15 years</label><br>
+
+                <input type="radio" id="y4" name="expereince" value="y4">
+                <label for="y4">16+ years</label><br>
+            </div>
+
+            <div class="gender">
+                <label for="gender" class="artstyle">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="usa">Male</option>
+                    <option value="uk">Female</option>
+                    <option value="canada">Other</option>
+                    <option value="canada">Prefer not to say</option>
+                    
+                </select>
+            </div>
+
+
+            <br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <nav>
+            <div class="nav2">
+                <a href="https://webpages.charlotte.edu/kpate222/ITIS3135/index.html.txt">CLT Page</a> ||
+                <a href="https://krishnap17.github.io/">Github Page</a> ||
+                <a href="https://krishnap17.github.io/ITIS3135/index.html">Github Course Page</a> ||
+                <a href="https://github.com/KrishnaP17">Github</a> ||
+                <a href="https://www.freecodecamp.org/kpate222">Freecode Camp</a> ||
+                <a href="https://www.codecademy.com/profiles/kpate222uncc.edu">CodeAcademy</a> ||
+                <a href="https://www.linkedin.com/in/krishna-patel-586834214/">LinkedIn</a> 
+            <div>
+        </nav>
+
+        <p> Page Designed By <a href="KeenPeacemakerDesigns.com/">Keen Peacemaker Designs</a> © 2023</p>
+
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+           </a>
+           <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+             </a>
+           
+
+           
+        
+    </footer>
+
+</body>
+</html>
