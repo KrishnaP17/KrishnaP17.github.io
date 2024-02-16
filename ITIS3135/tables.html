@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keen Peacemaker Table</title>
+    <title>Keen Peacemaker || ITIS 3135 || Tables</title>
 </head>
 <style>
+    body{
+        background-color: rgba(8, 173, 8, 0.58);
+        text-align:center;
+        color:  rgb(9, 139, 29);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
     table{
         border-style: solid;
         border-collapse: collapse;
@@ -13,6 +19,7 @@
         text-align: center;
 
     }
+
 
     tr{
         border-style: groove;
@@ -22,12 +29,44 @@
         border-right: 2px solid black;
 
     }
+    th{
+        color:rgba(255, 255, 255, 0.705);
+    }
     figcaption{
         text-align: center;
     }
     h3{
         color: brown;
         text-align: center;
+    }
+    ol li{
+        text-align: left;;
+    }
+    table.complex {
+            border-collapse: collapse;
+            width: 100%;
+    }
+    table th, table td {
+        padding: 10px;
+        border: 2px solid black;
+    }
+
+    table.complex th, table.complex td {
+        padding: 10px;
+        border: 2px solid black;
+    }
+
+    table.complex th {
+        background-color: #27a271c9; /* Dark color for the top row */
+        color: rgba(255, 255, 255, 0.705);
+    }
+
+    table.complex tr:nth-child(even) {
+        background-color: #80ea4898; /* Light color for even rows */
+    }
+
+    table.complex tr:nth-child(odd) {
+        background-color: #55cf63; /* Dark color for odd rows */
     }
 
 
@@ -36,7 +75,7 @@
 <body>
     <header>
         <h1>
-            Krishna Patel's Keen Peacemaker || ITIS 3135
+            Keen Peacemaker || ITIS 3135 
         </h1>
         <nav>
             <div class="nav1">
@@ -44,14 +83,19 @@
                 <a href = "introduction.html"> Introduction </a> ||
                 <a href = "contract.html"> Contract </a> ||
                 <a href = "tables.html"> Table </a> ||
-                <a href = "forms.html"> Form </a>
+                <a href = "forms.html"> Form </a> ||
+                <a href = "webevaluations.html"> Web Evaluations </a> 
+
+
 
             </div>
         </nav>
+        <nav class="two">  <a href = "../ITIS3135/Stuff/CRAPPY WEB+.htm"> CRAPPY SITE </a> </nav>
+
     </header>
 
     <main>
-        <h2>Activity #2 HTML Tables</h2>
+        <h2>Tables</h2>
         
         <h3>My Tabular Data</h3>
 
@@ -117,7 +161,7 @@
         <figure>
             <figcaption>Employee Data/Information</figcaption>
 
-        <table>
+        <table class ="complex">
             <tbody>
             <tr>
                 <th>Occupation</th>
@@ -199,7 +243,7 @@
             <div>
         </nav>
 
-        <p> Page Designed By <a href="KeenPeacemakerDesigns.com/">Keen Peacemaker Designs</a> © 2023</p>
+        <p> Page Designed By <a href="..\ITIS3135\KeenPeacemakerDesigns.com\index.html">Keen Peacemaker Designs</a> © 2023</p>
 
         <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
             <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
