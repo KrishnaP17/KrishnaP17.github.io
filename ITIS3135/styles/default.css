@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: rgba(8, 173, 8, 0.58);
     text-align:center;
     color:  rgb(9, 139, 29);
@@ -65,4 +65,121 @@ figure{
 .evaluations{
     text-align: left;
     font-size: 14px;;
+} */
+
+
+body {
+    background-color: rgba(8, 173, 8, 0.58);
+    text-align: center;
+    color: rgb(9, 139, 29);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav1, .nav2 {
+    font-size: 25px;
+}
+
+.two {
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+a {
+    color: chocolate;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+    color: brown;
+}
+
+.introul{
+    text-align: left;
+    margin: 0 10%;
+}
+
+.evaluations {
+    text-align: left;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+    h1, h2 {
+        font-size: 35px;
+    }
+
+    .nav1, .nav2 {
+        font-size: 22px;
+    }
+
+    .two {
+        font-size: 16px;
+    }
+
+    img {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    h1, h2 {
+        font-size: 30px;
+    }
+
+    .nav1, .nav2 {
+        font-size: 20px;
+    }
+
+    .two {
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1, h2 {
+        font-size: 25px;
+    }
+
+    .nav1, .nav2 {
+        font-size: 18px;
+    }
+
+    .two {
+        font-size: 12px;
+    }
+
+    img {
+        max-width: 300px;
+    }
 }
