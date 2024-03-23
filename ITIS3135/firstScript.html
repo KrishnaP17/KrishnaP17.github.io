@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Patel's Keen Peacemaker || ITIS313 First Scripts</title>
+    <link rel= "stylesheet" href="styles/default.css">
+</head>
+<style>
+    main{
+        text-align: left;
+        padding: 20px;
+    }
+    main p{
+        color: rgb(150, 84, 37);
+    }
+    main h3{
+        text-align: center;
+        padding: 0;
+    }
+    main h4{
+        color: chocolate;
+    }
+
+    footer{
+        padding-top: 40px;
+    }
+</style>
+<body>
+    <header>
+        <h1>
+            Krishna Patel's Keen Peacemaker || ITIS 3135
+        </h1>
+        <nav>
+            <div class="nav1">
+                <a href = "index.html"> Home </a> ||
+                <a href = "introduction.html"> Introduction </a> ||
+                <a href = "contract.html"> Contract </a> ||
+                <a href = "tables.html"> Table </a> ||
+                <a href = "forms.html"> Form </a> ||
+                <a href = "webevaluations.html"> Web Evaluations </a> ||
+                <a href = "firstScript.html"> First Scripts  </a> 
+
+
+            </div>
+        </nav>
+
+        <nav class="two">  <a href = "Stuff/CRAPPY WEB+.htm"> CRAPPY SITE </a> </nav>
+    </header>
+
+    <main>
+        <h3 id="date"></h3>
+
+        <h4>Enter your name: </h4>
+        <input id="name">
+
+        <h4>How are you feeling today?</h4>
+        <input id="mood">
+        <button type="button" onclick = "myFunction()">Submit</button>
+
+        <h4>Enter a number between 1 and 10: </h4>
+        <input id="number">
+        <button type="button" onclick ="getPolygon()">Submit</button>
+        <p id="inputText"></p>
+
+        <h4>Do you like art? (yes or no)</h4>
+        <input id="art">
+        <button type="button" onclick = "likeArt()">Submit</button>
+        <p id="artAnswer"></p>
+
+        <h4>Who is your favorite artist?</h4>
+        <input id="fav">
+        <button type="button" onclick = "favoriteArtist()">Submit</button>
+        <p id="favArtist"></p>
+
+        <h4>What is your favorite color?</h4>
+        <input id="favColor">
+        <button type="button" onclick = "favoriteColor()">Submit</button>
+        <p id="color"></p>
+
+        <h4>Have you ever tried my favorite style of art?: Portrait</h4>
+        <input id="portrait">
+        <button type="button" onclick = "triedFavoriteStyle()">Submit</button>
+        <p id="portraitAnswer"></p>
+
+        <h4>How old are you?</h4>
+        <input id="age">
+        <button type="button" onclick = "askAge()">Submit</button>
+        <p id="ageAnswer"></p>
+
+        
+
+
+
+
+    </main>
+
+    <footer>
+        <nav>
+            <div class="nav2">
+                <a href="https://webpages.charlotte.edu/kpate222/ITIS3135/index.html.txt">CLT Page</a> ||
+                <a href="https://krishnap17.github.io/">Github Page</a> ||
+                <a href="https://krishnap17.github.io/ITIS3135/index.html">Github Course Page</a> ||
+                <a href="https://github.com/KrishnaP17">Github</a> ||
+                <a href="https://www.freecodecamp.org/kpate222">Freecode Camp</a> ||
+                <a href="https://www.codecademy.com/profiles/kpate222uncc.edu">CodeAcademy</a> ||
+                <a href="https://www.linkedin.com/in/krishna-patel-586834214/">LinkedIn</a> 
+            <div>
+        </nav>
+
+        <p> Page Designed By <a href="..\ITIS3135\KeenPeacemakerDesigns.com\index.html">Keen Peacemaker Designs</a> © 2023, <a href="https://www.freecodecamp.org/certification/kpate222/responsive-web-design">Certified in RWD </a> </p>
+
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+    </footer>
+
+    <script>
+        // Script to dynamically assign the current page URL to the validation buttons
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/defaultScript.js"></script>
+    
+</body>
+</html>
