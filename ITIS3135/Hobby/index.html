@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/albertus-medium" rel="stylesheet">
+    <title> Krishna's Hobby Page </title>
+    <link rel="icon" type="image/x-icon" href="../Hobby/Images/favicon.png">
+
+    <!-- &#x26BD; -->
+
+
+
+<style>
+    body{
+        /* color: #C8102E; */
+        /* background: #00B2A9 */
+        padding: 0;
+        margin: 0;
+        background-color: #C8102E;
+        color: white;
+        font-family: 'Albertus Medium', sans-serif;;
+       
+    }
+    h1{
+        position: relative;
+        top: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #04b4abb9;
+        text-shadow:
+                0 0 5px #04b4abb9, /* inner glow */
+                0 0 1px white, /* outer glow */
+                0 0 0px white, /* outer glow */
+                0 0 10px #04b4abb9; /* outer glow */
+        word-spacing: 7px;
+    }
+    h2{
+        text-align: center;
+        color: #fef57a;
+        position: relative;
+        top: -20px;
+
+    }
+    
+    .question {
+        border: none;
+        box-shadow: none;
+
+    }
+    .radio-label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .submit-btn {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .section{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    .navbar{
+        display:flex;
+        justify-content: center;
+        position: relative;
+        margin-top: 55px;
+    }
+    button{
+        position: relative;
+        height: 40px;
+        width: 90px;
+        margin: 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.137);
+        background: radial-gradient(circle at center,#1fd6cdda , #04b4abe8);
+        box-shadow:
+                0 0 3px #fef57a, /* inner glow */
+                0 0 1px #fef57a, /* outer glow */
+                0 0 0px #fef57a, /* outer glow */
+                0 0 10px #fef57a; 
+                font-size: 13px;
+        font-family: 'Albertus Medium', sans-serif;
+        color: #f1ea85;
+        font-weight: 600;
+
+
+
+    }
+    button:hover{
+        background: radial-gradient(circle at center,#d1bdc0be , #C8102E);
+
+
+    }
+
+    
+    .navimg1{
+        position: relative;
+        top: -30px;
+        left: 35px;
+    }
+
+    .navimg2{
+        position: relative;
+        top: -35px;
+        left: -30px;
+    }
+
+    footer{
+        position: relative;
+        padding: 20px;
+        bottom: 0;
+        background-color: #04b4ab84;
+        text-align: center;
+        color:#fef57a;
+    }
+    a{
+        text-decoration: none;
+        color: #04b4ab;
+    }
+
+    ul, table, form, section p, .AIimage{
+        margin: 10px;
+        border: 1px solid;
+        box-shadow:
+                0 0 3px #fef57a, /* inner glow */
+                0 0 1px #fef57a, /* outer glow */
+                0 0 0px #fef57a, /* outer glow */
+                0 0 10px #fef57a; 
+        padding: 20px;
+    }
+    li{
+        margin: 15px;
+        padding: 10px;
+    }
+    table body{
+        padding: 10px;
+    }
+    table td{
+        border: 1px solid;
+        padding: 10px;
+    }
+    .secondTable th{
+        border: 1px solid;
+
+    }
+    .secondTable th{
+        padding: 10px;
+    }
+ 
+    .AIimage p{
+        border: none;
+        box-shadow: none;
+        margin: 10px;
+        text-align: center;
+    }
+    .AIimage, table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 2rem 0;
+        margin: 20px 10px;
+    }
+    .AIimage figure {
+        margin: 0;
+        text-align: center;
+    }
+    .favicon{
+        height: 16px;
+        width: 16px;
+        position: relative;
+        top: 10px;
+        padding: 10px;
+    }
+
+</style>
+</head>
+
+
+<body>
+    <header>
+        <h1>Krishna's Soccer Hobby</h1> <!-- add the fire symbols-->
+        <nav class ="navbar">
+            <img src="https://www.liverpoolfc.com/liverpoolfc_crest.png" height="140" width="110" class="navimg2" alt="liverpool photo">
+            <button type="button" onclick="displaySection('what')">WHAT</button> <img src="../Hobby/Images/favicon.png" alt="Favicon" height="16" width="16" class="favicon">
+            <button type="button" onclick="displaySection('who')">WHO</button> <img src="../Hobby/Images/favicon.png" alt="Favicon" height="16" width="16" class="favicon">
+            <button type="button" onclick="displaySection('when')">WHEN</button> <img src="../Hobby/Images/favicon.png" alt="Favicon" height="16" width="16" class="favicon">
+            <button type="button" onclick="displaySection('where')">WHERE</button> <img src="../Hobby/Images/favicon.png" alt="Favicon" height="16" width="16" class="favicon">
+            <button type="button" onclick="displaySection('how')">HOW</button> <img src="../Hobby/Images/favicon.png" alt="Favicon" height="16" width="16" class="favicon">
+            <button type="button" onclick="displaySection('why')">WHY</button> <img src="../Hobby/Images/favicon.png" alt="Favicon" height="16" width="16" class="favicon">
+            <button type="button" onclick="displaySection('AiPromt')">AI Prompt</button> 
+            <img src="https://www.liverpoolfc.com/liverpoolfc_crest.png" height="140" width="110" class="navimg1" alt="liverpool photo">
+
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="what" class = "section active">
+            <h2>Watching fooball AKA soccer: Liverpool</h2>
+            <!-- paragraph explaining what soccer is and backstory of liverpool and me -->
+            <p>Football, also known as soccer in some parts of the world, is a globally beloved sport that brings together millions of fans, players, and enthusiasts. At its core, football is a game played between two teams, each consisting of eleven players, with the objective of scoring goals by getting the ball into the opponent's net. Football is renowned for its simplicity yet complexity, as it requires teamwork, strategy, skill, and physical prowess. It involves various aspects such as passing, dribbling, shooting, defending, and goalkeeping. The sport is not just about athleticism and technique but also about passion, emotion, and the sense of camaraderie it fosters among players and fans.</p>
+
+            <!-- AI-Image + figcaption + italicized paragraph explaining prompt -->
+            <div class ="AIimage">
+                <figure>
+                    <img src="../Hobby/Images/what.jpeg" alt="Liverpool FC" height = "200" width="300">
+                    <figcaption>What is so cool about watching Liverpool?</figcaption>
+                </figure>
+                <p><i>So what makes me want to watch Liverpool specifically? Well I watch Liverpool FC for the electrifying moments on the pitch that keep me on the edge of my seat. From their trademark attacking style of play to the thrilling comebacks and last-minute goals, every match is a rollercoaster of emotions. The passion of the players, the tactical brilliance of the manager, and the unwavering support of the fans create an atmosphere like no other.</i></p>
+            </div>
+
+            <!-- form asking hobbies -->
+            <form>
+                <label for="name">Hello and Welcome! What is your name?</label><br>
+                <input type="text" id="name" name="name"><br><br>
+            
+                <label for="hobby">What is your hobby?</label><br>
+                <input type="text" id="hobby" name="hobby"><br><br>
+            
+                <label for="freetime">What do you like to do in your free time?</label><br>
+                <input type="text" id="freetime" name="freetime"><br><br>
+            
+                <label for="soccer">Do you like soccer?</label><br>
+                <input type="radio" id="soccer1" name="soccer" value="Yes" required><label for="soccer1">Yes</label><br>
+                <input type="radio" id="soccer2" name="soccer" value="No" required><label for="soccer2">No</label><br><br>
+            
+                <div id="soccerTeam" style="display: none;">
+                  <label for="favoriteTeam">If yes, which team is your favorite?</label><br>
+                  <input type="text" id="favoriteTeam" name="favoriteTeam"><br><br>
+                </div>
+            
+                <input type="submit" value="Submit">
+            </form>
+            <script>
+              document.querySelector('input[name="soccer"]').addEventListener('change', function() {
+                const soccerTeamDiv = document.getElementById('soccerTeam');
+                if (this.value === 'Yes') {
+                  soccerTeamDiv.style.display = 'block';
+                } else {
+                  soccerTeamDiv.style.display = 'none';
+                }
+              });
+            </script>
+              
+        </section>
+
+
+        <section id="who" class = "section">
+            <h2>Liverpool's Legacy</h2>
+            <!-- paragraph explaing who liverpool is -->
+            <p>Liverpool Football Club is a professional football (soccer) club based in Liverpool, England. It is one of the most successful and storied football clubs in the world.Liverpool FC was founded in 1892 following a dispute between the Everton Football Club committee and its president John Houlding. The club initially played at Anfield, which remains its home stadium to this day. The club's modern era of success began under manager Bill Shankly in the 1960s. Shankly transformed Liverpool into a dominant force in English and European football. He won numerous trophies, including the First Division titles and the UEFA Cup. In the late 1970s and 1980s, Liverpool also dominated the English First Division, winning numerous league titles. However, the club faced tragedy in 1989 when 96 fans lost their lives in the Hillsborough disaster, a tragic event that had a profound impact on the club and its supporters. Liverpool has been home to many legendary players, including Kenny Dalglish, Steven Gerrard, Ian Rush, and Kevin Keegan, among others. The club has also had iconic managers like Bill Shankly, Bob Paisley, and more recently, Jurgen Klopp. Liverpool FC has a massive global fanbase known for its passionate support. The club's anthem, "You'll Never Walk Alone," is famous worldwide and is sung by fans before every home game at Anfield. Liverpool's success and cultural impact have made it one of the most recognizable and respected football clubs globally.</p>
+
+            <!-- AI-Image + figcaption + italicized paragraph explaining prompt -->
+           <div class="AIimage">
+            <figure>
+                <img src="../Hobby/Images/who.jpg" alt="Liverpool FC" height = "200" width="300">
+                <figcaption> The Second Division title win in 1960 laid the foundation for Liverpool's future success in English football.</figcaption>
+            </figure>
+            
+            <p><i>What makes the 1960 Liverpool trophy so fascinating to me is not just its historical significance but also the narrative of perseverance and triumph it represents. It showcases the essence of football as a sport where teams overcome adversity and setbacks to achieve their goals. The Second Division title win in 1960 is a testament to Liverpool FC's resilience, spirit, and unwavering commitment to excellence, making it a captivating chapter in the club's storied history that continues to inspire fans and football enthusiasts alike.</i></p>
+           </div>
+
+            <!-- survey form asking a quic trivia-->
+            <form id="trivia-form">
+                <div class="question">
+                    <p>1. Who was the iconic Liverpool FC manager who transformed the club in the 1960s?</p>
+                    <label class="radio-label">
+                        <input type="radio" name="q1" value="wrong" onclick="check('q1', this.value)"> Kenny Dalglish
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="q1" value="correct" onclick="check('q1', this.value)"> Bill Shankly
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="q1" value="wrong" onclick="check('q1', this.value)"> Jurgen Klopp
+                    </label>
+                </div>
+
+                <div class="question">
+                    <p>2. What tragedy deeply impacted Liverpool FC in 1989?</p>
+                    <label class="radio-label">
+                        <input type="radio" name="q2" value="wrong" onclick="check('q2', this.value)"> Heysel Stadium disaster
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="q2" value="correct" onclick="check('q2', this.value)"> Hillsborough disaster
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="q2" value="wrong" onclick="check('q2', this.value)"> Munich air disaster
+                    </label>
+                </div>
+
+
+                <div class="question">
+                    <p>3. What is Liverpool's Anthem called?</p>
+                    <label class="radio-label">
+                        <input type="radio" name="q3" value="wrong" onclick="check('q3', this.value)"> Glory to all
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="q3" value="correct" onclick="check('q3', this.value)"> You'll never walk alone
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="q3" value="wrong" onclick="check('q3', this.value)"> Success by our side
+                    </label>
+                </div>
+            </form>
+
+            <div id="result"></div>
+
+            <script>
+                function check(question, answer){
+                    if(answer === "wrong"){
+                        document.getElementById("result").innerHTML = "Incorrect! Try again";
+                    }
+                    else{
+                        document.getElementById("result").innerHTML = "Correct!";
+                    }
+                }
+            </script>
+        </section>
+
+
+        <section id="when" class = "section">
+            <h2>My admiration and peak of Liverpool</h2>
+
+            <!-- AI-Image + figcaption + italicized paragraph explaining prompt -->
+
+            <!-- paragraph explaining how we connect-->
+            <p>Ever since I was a young teenager at the age of 13, my passion for football began to bloom. I found myself deeply drawn to the sport, not just as a spectator but also as a player. Playing for my school's junior varsity team throughout high school was an experience that fueled my love for the game even further. It was during these formative years that I discovered my idol, Cristiano Ronaldo, whose skill, dedication, and relentless pursuit of excellence on the field inspired me immensely. My admiration for football extended beyond individual players to clubs as well. Initially a fervent supporter of Real Madrid, mesmerized by their rich history and star-studded lineup, I later found myself drawn to the captivating allure of Liverpool Football Club. The passion, resilience, and sheer determination displayed by Liverpool's players, both past and present, resonated deeply with me. Their iconic victories, unforgettable moments on the pitch, and unwavering support from fans around the world captured my heart and solidified my admiration for the club.</p>
+            <!-- AI-Image + figcaption + italicized paragraph explaining prompt -->
+            <div class="AIimage">
+                <figure>
+                    <img src="https://preview.redd.it/on-this-day-six-years-ago-real-madrid-3-0-atletico-madrid-v0-4w9moqoipbxa1.jpg?auto=webp&s=3961350e570a4211647bc77ae92b97cc74f8ba7a" alt="Liverpool FC" height = "200" width="300">
+                    <figcaption> Cristiano Ronaldo put a hat trick past Atletico Madrid in the UCL and hit this iconic celebration.</figcaption>
+                </figure>
+                <p><i>This game where Ronaldo scored a hatrick against Atletico Mardrid, scoring a perfect 3-0 was when he became my idol because of his dedication and play throughout the game. I remember watching it live and cheering for him, not knwoing he'll spark a light for soccer in me ever since. The 13 year old me was absolutely fascinated and mesmerized by the beauty of football.</i></p>
+            </div>
+
+            <div class="AIimage">
+                <figure>
+                    <img src="https://static.timesofisrael.com/www/uploads/2018/01/AP18003370856069.jpg" alt="Liverpool FC" height = "200" width="300">
+                    <figcaption>In 2017, Mohamed Salah played a memorable game for Liverpool against AS Roma in the UEFA Champions League semi-final first leg.</figcaption>
+                </figure>
+                <p><i>Watching Mohamed Salah play for Liverpool since 2017 has been nothing short of mesmerizing. His electrifying pace, clinical finishing, and exceptional footballing intelligence have made him a true gem in Liverpool's squad. What truly captivated me about Salah was not just his on-field brilliance but also his humility, determination, and passion for the game. His ability to inspire and uplift the team during crucial moments has earned my utmost respect and admiration for not just him but Liverpool too.</i></p>
+            </div>
+
+        </section>
+
+
+        <section id="where" class = "section">
+            <!-- AI-Image + figcaption + italicized paragraph explaining prompt -->
+            <div class="AIimage">
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Anfield_stadium_%28Liverpool%29_panorama_view_from_main_stand.jpg/1200px-Anfield_stadium_%28Liverpool%29_panorama_view_from_main_stand.jpg" alt="Liverpool FC" height = "200" width="300">
+                    <figcaption>Anfield is a Uefa 4-star stadium and home to Liverpool FC since 1892, having been built in 1884, with the capacity to hold 54,000 spectators. The quote "This is Anfield" represents the club's legacy, resilience, and the intimidating aura that Anfield creates for visiting teams.</figcaption>
+                </figure>
+                <p><i>On March 5th, 2023, I had the exhilarating experience of witnessing Liverpool's "Big Reds" dominate the field at Anfield Stadium in a sensational 7-0 victory against their arch-rivals Manchester United. The atmosphere at Anfield was nothing short of electric, with passionate fans filling the stadium with chants, cheers, and a sea of red banners. The weather that day was perfect for football, with clear skies and a cool breeze adding to the excitement of the match. As a dedicated Liverpool fan, attending this game at Anfield has always been a highlight of my hobby. The thrill of watching Salah's lightning-fast runs, Mane's precision strikes, and Firmino's creative playmaking was absolutely mesmerizing. The team's relentless attack and solid defense kept us on the edge of our seats throughout the game, culminating in a resounding victory that left the entire stadium roaring with joy.  </i></p>
+            </div>
+                
+            <!-- table -->
+            <table> 
+                <thead> 
+                    <tr> 
+                        <th>Date</th> 
+                        <th>Result</th> 
+                        <th>Against</th> 
+                        <th>Competition</th> 
+                    </tr> 
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <td>17.09.1974</td> 
+                        <td>11 - 0</td> 
+                        <td>Strømsgodset</td> 
+                        <td>ECW Cup 1st round 1L</td> 
+                    </tr> 
+                    <tr> 
+                        <td>01.10.1980</td> 
+                        <td>10 - 1</td> 
+                        <td>Oulun Palloseura</td> 
+                        <td>European Cup 1st R 2nd L</td> 
+                    </tr> 
+                    <tr> 
+                        <td>06.12.1902</td> 
+                        <td>9 - 2</td> 
+                        <td>Grimsby Town</td> 
+                        <td>1st Division</td> 
+                    </tr> <tr> <td>05.03.2023</td> 
+                        <td>7 - 0</td> 
+                        <td>Manchester United</td> 
+                        <td>Premier League</td> 
+                    </tr> <tr> <td>06.12.2017</td> 
+                        <td>7 - 0</td> 
+                        <td>Spartak Moscow</td> 
+                        <td>Champions L. 1st Group Ph.</td> 
+                    </tr> 
+                </tbody> 
+            </table>
+            <!-- paragraph -->
+            <p>The sign "This Is Anfield" was first installed by Bill Shankly, but the concept was not his own. Home of Liverpool FC, Anfield is more than just a stadium - it is sacred ground for the club's supporters. With a rich history and unique features, Anfield has made legends and dreams come true.
+                Located in the Anfield area of ​​Liverpool, it is considered one of the most iconic football stadiums in the world. The stadium is located just a few miles from Liverpool city center and is surrounded by a vibrant community of passionate football supporters.
+                Liverpool is more than just a club, it is also a business. The players and the club speak for themselves, which makes the club known all over the world. The key to success is the key to success, so if you're interested in promoting yourself, consider using a business card. View Vista free, creative and exciting business cards.
+                The location of the stadium adds to the unique character and atmosphere of the stadium, making it an exceptional location for Liverpool FC and its supporters..</p>
+
+        </section>
+
+
+        <section id="how" class = "section">
+            <h2>How Liverpool turned into my favorite</h2>
+
+            <p>
+                I first stumbled upon Darwin Nunez's name during a casual conversation with a friend about rising stars in football. Curious, I delved into his journey, mesmerized by his swift rise from a promising talent to a key player for Liverpool. It all began when a scout spotted his raw talent in a small town in Uruguay, where Nunez honed his skills relentlessly. His dedication paid off as he caught the eye of Liverpool's management, who swiftly secured him in their ranks.
+                Nunez was one of the only players who was so bad but whom I never looked down on and prayed for his success. Nunez was a key player who played a major role in delving me into watching every Liverpool game, despite my tests and studies going on. Sunday's of the Premier Leauge when Liverpool played, I would be standing in front of my T.V. waiting for him to come on and I've never felt that thrill for anyone else other than Cristiano Ronaldo before. Nunez's impact on the pitch was immediate, his lightning-fast pace and precise finishing earning him a place in Liverpool's starting lineup. With each game, he showcased his prowess, scoring crucial goals and becoming a fan favorite. His feats in the Champions League final, where he netted a hat-trick to secure Liverpool's victory, solidified his status as a rising star in the football world, leaving a legacy that would be remembered for generations to come. </p>
+            <!-- AI-Image + figcaption + italicized paragraph explaining prompt -->
+            <div class="AIimage">
+                <figure>
+                    <img src="https://i2-prod.liverpool.com/incoming/article28355775.ece/ALTERNATES/s615/0_GettyImages-1885192850.jpg" alt="Liverpool FC" height = "200" width="300">
+                    <figcaption>On 21 January 2024, Darwin Núñez scored a brace against Bournemouth; with his first goal, he scored the 100th goal of his senior career for club and country, with his second, he became the first Premier League player that season to register at least 10 goals and 10 assists in all competitions.</figcaption>
+                </figure>
+                <p><i>Darwin Nunez is a Uruguayan professional footballer who currently plays as a striker for the English Premier League club Liverpool and the Uruguay national team. He was born on June 24, 1999, in Artigas, Uruguay, and began his football career in the youth academy of his local team, Artigas. Nunez was put through a similar test when Liverpool and Benfica locked horns in the Champions League quarter-final last season. While the Eagles lost the tie 6-4 on aggregate, the 23-year-old passed his audition with flying colours, hitting a goal in either leg.
+                    He even slotted a hat-trick of goals past Alisson at Anfield, even if two were ultimately chalked off due to offside. The youngster certainly proved he knew how to find the back of net, and fast forward to the summer window, Nunez was unveiled as new Liverpool signing for a club-record £85m.  </i></p>
+            </div>
+
+            <table class = "secondTable">
+                <tr>
+                  <th colspan="5">Darwin Nunez's Stats as of 2024</th>
+                </tr>
+                <tr>
+                  <th>Matches Played</th>
+                  <th>Goals Scored</th>
+                  <th>Assists</th>
+                  <th>Yellow Cards</th>
+                  <th>Red Cards</th>
+                </tr>
+                <tr>
+                  <td>30</td>
+                  <td>20</td>
+                  <td>8</td>
+                  <td>3</td>
+                  <td>0</td>
+                </tr>
+              </table>
+            <!-- table of their stats -->
+            <!-- paragraph explaingin thier stats -->
+        </section>
+
+
+        <section id="why" class = "section">
+            <h2>Not watching football... but watching passion</h2>
+            <p>I started liking soccer when I was 13 years old and joined my school's junior varsity team. Playing soccer became more than just a sport; it turned into a hobby because of my deep passion for the game. I found joy in the competitive nature of soccer, the camaraderie with my teammates, and the adrenaline rush during matches. One of the most thrilling moments I had while playing for the junior varsity soccer team was during a tense match against our rivals. The game was neck and neck, with both teams giving their all to score. As the clock ticked down, the excitement and pressure were palpable. In the final seconds, a teammate passed me the ball near the goal. Heart pounding, I took a shot that seemed to hang in the air for an eternity before finding the back of the net. The stadium erupted with cheers as we won the game, and I felt an incredible mix of joy and pride. That winning goal will always be a cherished memory, reminding me of the passion and camaraderie that soccer brought into my life.</p>
+            <!-- AI-Image + figcaption + italicized paragraph explaining prompt -->
+            <div class="AIimage">
+                <figure>
+                    <img src="../Hobby/Images/krishnaSoccerTeam.jpg" alt="Mallard Creek Soccer" height = "200" width="300">
+                    <figcaption>Mallard Creek High School Soccer Team 2019</figcaption>
+                </figure>
+                <p><i>In 2019, I had the honor of playing soccer for my school team, Mallard Creek High School. It was an unforgettable season filled with thrilling moments and camaraderie with my teammates. One particular match stands out in my memory.
+
+                    We were facing off against a formidable opponent, and the game was intense right from the start. Both teams displayed skill and determination, creating an electric atmosphere on the field. As the match progressed, every pass, tackle, and shot felt crucial. It felt as if the experience that I was watching on T.V. came to life. </i></p>
+            </div>
+
+            <p>Playing soccer for Mallard Creek High School in 2019 was a pivotal experience that deepened my passion for the sport, leading me to follow and admire teams like Liverpool FC. The thrill of competing on the field, scoring goals, and celebrating victories with teammates mirrored the excitement I felt watching Liverpool's matches and cheering for their successes. Just as I experienced the camaraderie and adrenaline rush in school soccer, I found similar emotions watching Liverpool's games, especially during pivotal moments like title-winning matches or dramatic comebacks. The dedication, teamwork, and sheer love for the game that I witnessed and experienced firsthand fueled my admiration for Liverpool's ethos and achievements, making them more than just a team but an inspiration in my soccer journey.</p>
+            <!-- AI-Image + figcaption + italicized paragraph explaining prompt -->
+
+        </section>
+
+        <section id="AiPromt" class = "section">
+            <h2>What I have used AI Promt for </h2>
+                <ul>
+                    <li>CSS on how to make text box and text glow</li>
+                    <li>How to make sections in HTML with the display properties of hide and show using CSS and javascript</li>
+                    <li>Looking/making up some information about the topic: Liverpool. Ex: Stats and facts</li>
+                    <li>How to use javascript for making a trivia form that displays correct or incorrect answer based on the choice picked</li>
+                    <li>How to make the footer stick to the bottom</li>
+                </ul>
+        </section>
+
+
+
+        <!-- Put "I only used AI for images so I don't need the AI-content section" -->
+    </main>
+
+    <script>
+       
+       function displaySection(sectionId) {
+            const sections = document.getElementsByClassName("section");
+            for (let i = 0; i < sections.length; i++) {
+                if (sections[i].id === sectionId) {
+                    sections[i].classList.add("active");
+                } else {
+                    sections[i].classList.remove("active");
+                }
+            }
+        }
+    </script>
+
+    <footer>
+        <!-- Have more to work on the footer -->
+        <p> Page Designed By <a href="../ITIS3135/KeenPeacemakerDesigns.com/index.html">Keen Peacemaker Designs</a> © 2023, <a href="https://www.freecodecamp.org/certification/kpate222/responsive-web-design">Certified in RWD </a></p>
+        <a href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fkpate222%2FITIS3135%2FHobby%2Findex.html" id="validation_link_html" target="_blank">
+            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+
+        <a href="http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fkpate222%2FITIS3135%2FHobby%2Findex.html&usermedium=all&vextwarning=&warning=1" id="validation_link_css" target="_blank">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+
+        <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/kpate222/ITIS3135/Hobby/index.html" id="webaim" target="_blank">
+            <img src="../Hobby/Images/button_validation_wcag-1.png" alt="Valid webaim">
+        </a>
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+    </footer>
+    
+ 
+
+    </body>
+</html>
