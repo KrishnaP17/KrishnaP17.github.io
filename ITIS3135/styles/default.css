@@ -182,4 +182,16 @@ figure {
     img {
         max-width: 300px;
     }
+
+
+}
+.slogan{
+    margin-bottom: 50px;
+}
+
+.slogan p{
+    width: 100%;
+    border: 1px solid chocolate;
+    padding: 10px;
+    text-align: left;
 }
