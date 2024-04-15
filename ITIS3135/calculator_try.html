@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Patel's Keen Peacemaker || ITIS3135 CalculatorTrial</title>
+    <link rel= "stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/x-icon" href="images/bear.png">
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+
+<style>
+
+    #screen{
+        height: 30px;
+        width: 175px;
+        position: relative;
+        left: 0px;
+        bottom: 10px;
+    }
+    .btn-number,.sign, .equal{
+        width: 30px;
+        height: 30px; 
+    }
+
+</style>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <div id="menu-container"></div>
+    <div id="subnav-container"></div>
+
+    <main>
+        <h2>Calculator Trial</h2>
+
+        <div class="calculator">
+            <input id="screen" type="text" readonly>
+            <div class="buttons">
+            <button onclick="clear()" class="btn-number">AC</button>
+            <button onclick="appendToDisplay('1')" class="btn-number">1</button>
+            <button onclick="appendToDisplay('2')" class="btn-number">2</button>
+            <button onclick="appendToDisplay('3')" class="btn-number">3</button>
+            <button onclick="appendToDisplay('4')" class="btn-number">4</button>
+            <button onclick="appendToDisplay('5')" class="btn-number">5</button>
+            <button onclick="appendToDisplay('6')" class="btn-number">6</button>
+            <button onclick="appendToDisplay('7')" class="btn-number">7</button>
+            <button onclick="appendToDisplay('8')" class="btn-number">8</button>
+            <button onclick="appendToDisplay('9')" class="btn-number">9</button>
+            <button onclick="appendToDisplay('0')" class="btn-number">0</button>
+
+            <button onclick="appendToDisplay('+')" class="sign">+</button>
+            <button onclick="appendToDisplay('-')" class="sign">-</button>
+            <button onclick="appendToDisplay('*')" class="sign">*</button>
+            <button onclick="appendToDisplay('/')" class="sign">/</button>
+
+            <button onclick="calculate()" class="equal">=</button>
+
+        </div>
+        </div>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+
+
+
+    </main>
+
+    <div id="footer-container"></div><br><br>
+    <div data-include="components/footer.html"></div>
+    
+    <script src ="scripts/HTMLInclude.min.js"></script>
+    <script src ="scripts/calculator.try.js"></script>
+    <script src ="scripts/dynamicloadHead1.js"></script>
+
+
+
+    </body>
+</html>
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Patel's Keen Peacemaker || ITIS 3135 || Arrays</title>
+    <link rel= "stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/x-icon" href="images/bear.png">
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+
+    <style>
+        main, h2{
+            text-align: left;;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div data-include="components/header.html"></div>
+    <div id="menu-container"></div>
+    <div id="subnav-container"></div>
+
+    <main>
+        <h2>Arrays</h2>
+
+        <label for="personName">Name: </label> 
+        <input type="text" id="personName"> <br>
+
+        <label for="salaryAmount">Salary: </label>
+        <input type="text" id="salaryAmount"> <br>
+
+        <button id="addSalary">Add Salary</button> <br>
+
+        <div id="modifySalaryDiv"></div>
+        <button id="modifySalary" onclick="modifySalary()">Modify Salary</button>
+        <button id="displayResults" onclick="displayResults()">Display Results</button>
+        <button id="displaySalary" onclick="displaySalary()">Display Salary</button>
+
+        <div id="display"></div>
+        <div id="results"></div>
+        <div id="results_table"></div>
+    </main>
+    <div id="footer-container"></div><br><br>
+    <div data-include="components/footer.html"></div>
+    
+  
+    <script src ="scripts/HTMLInclude.min.js"></script>
+    <script src ="scripts/arrays.js"></script>
+    <script src ="scripts/dynamicloadHead1.js"></script>
+
+
+
+    </body>
+</html>

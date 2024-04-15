@@ -1,0 +1,295 @@
+body {    
+    background: linear-gradient(#000000, #4f4a4ac9 50%, #000000 );
+    min-height: 100vh;
+    margin: 15px;
+
+    
+}
+
+/* Dropdown Menu */
+.dropdown{
+    position: fixed;
+    top: 5%;
+    right: 9%;
+    display: inline-block;
+    height:40px;
+    width: 100px;
+    border: 0.5px solid white;
+    text-align: center;
+    z-index: 1000;
+
+
+
+}
+.dropdown a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    padding-top: 10px;
+
+
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+    padding: 8px;
+}
+.dropdown:hover{
+    box-shadow: inset 0px 12px 25px 5px rgba(142, 141, 141, 0.525);
+    /* box-shadow: 6px 6px 10px 0px rgba(96, 93, 93, 0.4); */
+
+}
+
+.dropdown-content a:hover{
+    text-shadow: 0 0 10px white;
+    color: black;
+    font-size: 25px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.title img{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    left: 5%;
+    top: -50px
+
+}
+
+/* index.html */
+.home-container{
+    position: relative;
+    top: -100px;
+    width: 95vw;
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: inset 0px 12px 25px 5px rgba(29, 28, 28, 0.829);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: repeat(2, 1fr); /* Two rows */  
+    grid-gap: 20px;
+}
+.left-top img{
+    width: 100vh;
+    margin-left: 20px;
+}
+.left-top{
+    position: relative;
+    top: 100px;
+    height: 60vh;
+    width:60vw;
+    /* border: 1px solid rgba(255, 255, 255, 0.244); */
+    /* border-radius: 10px; */
+    /* box-shadow: inset 0px 12px 25px 5px rgba(29, 28, 28, 0.829); */
+}
+ 
+.top-right{
+    position: relative;
+    top: 30px;
+    height: 60vh;
+    width: 30vw;
+    /* border: 1px solid white; */
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.performance {
+    width: 60%;
+    height: 60vh;
+    border-radius: 10px;
+    box-shadow: inset 0px 12px 25px 5px rgba(29, 28, 28, 0.829);
+    margin-right: 20px; /* Adjust margin between performance and chunk */
+}
+.chunk {
+    width: 40%;
+    height: 60vh;
+    border-radius: 10px;
+    /* box-shadow: inset 0px 12px 25px 5px rgba(29, 28, 28, 0.829); */
+    margin-right: 10px; /* Adjust margin between performance and chunk */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: repeat(2, 1fr); /* Two rows */    
+    grid-gap: 20px;
+}
+.chunk > div{
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: inset 0px 12px 25px 5px rgba(29, 28, 28, 0.829);
+    margin-left: 10px;
+}
+
+.box1{
+    background-image: url('https://www.pngall.com/wp-content/uploads/11/Tesla-Model-S-PNG.png');
+    width: 100%; /* Take up the full width of the outer container */
+    height: 100%; /* Take up the full height of the outer container */
+    background-size: 100% 100%; /* Image scales to fit the inner container */
+    background-position: center;
+}
+
+
+/* history.html */
+.container-hist{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+    top: -120px;
+    height: 60vh;
+    width:95vw;
+    border-radius: 10px;
+}
+.box1hist{
+    position: relative;
+    height: 60vh;
+    width: 40vw;
+    border-radius: 10px;
+    box-shadow: inset 0px 12px 25px 5px rgba(29, 28, 28, 0.829);
+}
+.box2hist{
+    position: relative;
+    height: 60vh;
+    width: 60vw;
+    border-radius: 10px;
+    box-shadow: inset 0px 12px 25px 5px rgba(29, 28, 28, 0.829);
+}
+
+.slideshow-hist{
+    margin-top: -90px;
+    margin-left: 20vw;
+    margin-right: 10vw;
+    position:relative;
+    height: 300px;
+    width: 60vw;
+    border-radius: 10px;
+    box-shadow: inset 0px 12px 25px 5px rgba(29, 28, 28, 0.829);
+}
+.form-hist{
+    margin-top: 20px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    position:relative;
+    height: 200px;
+    width: 95vw;
+    border-radius: 10px;
+    box-shadow: inset 0px 12px 25px 5px rgba(29, 28, 28, 0.829);
+
+}
+
+
+
+/* styles.css */
+.container-feat {
+    position: relative;
+    display: inline-block;
+}
+
+.description {
+    position: absolute;
+    background-color: rgb(235, 13, 13);
+    color: rgb(243, 9, 9);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.carMap{
+ color: rgb(237, 7, 7);
+}
+.container-feat {
+    color: rgb(243, 8, 8);
+}
+
+/* comparison.html */
+.comp-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Two columns */
+    grid-template-rows: repeat(3, 1fr); /* Two rows */   
+    position: relative;
+    grid-gap: 10px;
+    top: -100px;
+    height: 70vh;
+    width: 95vw;
+    border-radius: 10px;
+    box-shadow: inset 0px 12px 25px 5px rgba(29, 28, 28, 0.829);
+}
+.comp-container > div{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: inset 0px 12px 25px 5px rgba(29, 28, 28, 0.829);
+ 
+}
+
+
+/* reviews.html */
+.review-overview{
+    position: relative;
+    top: -100px;
+    height: 30vh;
+    width: 95vw;
+    border-radius: 10px;
+    box-shadow: inset 0px 12px 25px 5px rgba(29, 28, 28, 0.829);
+}
+
+.review-slideshow{
+    position:relative;
+    top: -60px;
+    height: 45vh;
+    width: 60vw;
+    margin-left: 18vw;
+    margin-right: 10vw;
+    border-radius: 10px;
+    box-shadow: inset 0px 12px 25px 5px rgba(29, 28, 28, 0.829);
+}
+
+.button-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Two columns */
+    grid-template-rows: repeat(1, 1fr); /* Two rows */   
+    position: relative;
+    grid-gap: 10px;
+    top: -20px;
+    width: 95vw;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: inset 0px 12px 25px 5px rgba(29, 28, 28, 0.829);
+}
+.button-container > div{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: inset 0px 12px 25px 5px rgba(29, 28, 28, 0.829);
+}
+
+#welcome{
+    font-size: 30px;;
+}
+#title{
+    position: relative;
+    top: -40px;
+    font-size: 50px;
+}
+#title-description{
+    font-size: 25px;
+    position: relative;
+    top: -70px;
+}
+#pt2{
+    font-size: 18px;
+    text-transform: lowercase;
+}

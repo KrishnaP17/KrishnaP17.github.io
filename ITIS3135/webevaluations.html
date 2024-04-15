@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishna Patel's Keen Peacemaker || ITIS313 Contract</title>
     <link rel= "stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/x-icon" href="images/bear.png">
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+
+
+
 </head>
 <body>
-    <header>
-        <div data-include="components/header.html"></div>
-
-    </header>
+    <div data-include="components/header.html"></div>
+    <div id="menu-container"></div>
+    <div id="subnav-container"></div>
 
     <main>
         <h2>Website Evaluations</h2>
@@ -45,17 +49,14 @@
             </div>
         </section>
     </main>
-    </main>
 
-    <footer>
-        <div data-include="components/footer.html"></div>
-    </footer>
+    <div id="footer-container"></div><br><br>
+    <div data-include="components/footer.html"></div>
+
     
-        <script>
-            document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-                document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-        </script>
-        <script src ="scripts/HTMLInclude.min.js"></script>
+    <script src ="scripts/HTMLInclude.min.js"></script>
+    <script src ="scripts/dynamicloadHead1.js"></script>
+
 
     </body>
 </html>

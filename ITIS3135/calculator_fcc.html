@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Patel's Keen Peacemaker || ITIS3135 Home</title>
+    <link rel= "stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/x-icon" href="images/bear.png">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <div id="menu-container"></div>
+    <div id="subnav-container"></div>
+
+    <main>
+        <div class="calculator"><br><br>
+            <input class="display" type="text"> <br><br>
+            <div class="keys">
+                <button data-value="AC" class="operator">AC</button>
+                <button data-value="DEL" class="operator">DEL</button>
+                <button data-value="9">9</button>
+                <button data-value="8">8</button>
+                <button data-value="7">7</button>
+                <button data-value="6">6</button>
+                <button data-value="5">5</button>
+                <button data-value="4">4</button>
+                <button data-value="3">3</button>
+                <button data-value="2">2</button>
+                <button data-value="1">1</button>
+                <button data-value="0">0</button>
+                <button data-value="00">00</button>
+                <button data-value="+" class="operator">+</button>
+                <button data-value="-" class="operator">-</button>
+                <button data-value="/" class="operator">/</button>
+                <button data-value="*" class="operator">*</button>
+                <button data-value="%" class="operator">%</button>
+                <button data-value=".">.</button>
+                <button data-value="=">=</button> 
+            </div>
+        </div>
+        <br><br><br><br>
+    </main>
+
+    <div id="footer-container"></div><br><br>
+    <div data-include="components/footer.html"></div>
+    
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        document.getElementById("validation_link_disability").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
+    </script>
+    <script src ="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/calculator_fcc.js"></script>
+    <script src ="scripts/dynamicloadHead1.js"></script>
+
+
+    </body>
+</html>

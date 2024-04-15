@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishna Patel's Keen Peacemaker || ITIS3135 Introduction</title>
     <link rel= "stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/x-icon" href="images/bear.png">
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+
+
+
+    <style>
+        .introPic{
+            height: 500px;
+            width: 400px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div data-include="components/header.html"></div>
+    <div data-include="components/header.html"></div>
+    <div id="menu-container"></div>
+    <div id="subnav-container"></div>
 
-    </header>
     <main>
         <h2> ITIS 3135 Introduction</h2>
         
@@ -18,7 +29,7 @@
         
 
         <figure>
-            <img src="https://media.licdn.com/dms/image/D5603AQEbcY5EcofcqQ/profile-displayphoto-shrink_400_400/0/1694918922521?e=1711584000&v=beta&t=ib2uHoL2BwCiOg6lc5VjYVXPtAgKBkH1JgxFgYiwHsw" alt="Krishna Patel" >
+            <img src="images/IMG_0134 (1).JPG" alt="Krishna Patel" class="introPic">
             <figcaption>My besite took this picture on my birthday!</figcaption>
         </figure>
 
@@ -40,21 +51,18 @@
                 </ul>
             </li>
             <li><b>Funny/Interesting thing to remember me by:</b> I am actually really quiet until you get to personally know me, and once you do, I am actually a funny and jolly person. </li>
-            <li><b>I'd also like to share:</b> I graduate in 2026 and maybe will purse my master's at North Carolina State University</li>
+            <li><b>I'd also like to share:</b> I graduate in 2026 and maybe will purse my master's at North Carolina State University</li> <br><br>
 
 
         </ul>
     </main>
 
-    <footer>
-        <div data-include="components/footer.html"></div>
-    </footer>
+    <div id="footer-container"></div><br><br>
+    <div data-include="components/footer.html"></div>
     
-        <script>
-            document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-                document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-        </script>
-        <script src ="scripts/HTMLInclude.min.js"></script>
+    <script src ="scripts/HTMLInclude.min.js"></script>
+    <script src ="scripts/dynamicloadHead1.js"></script>
+
 
     </body>
 </html>
