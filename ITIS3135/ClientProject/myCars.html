@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundational Client Project Build</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class = "title">
+            <img src="../images/VEENA'S VROOM & VIEWS_transparent.png" alt="logo">
+            <!-- <p>VEENA'S VROOM & VIEWS</p> -->
+        </div>
+        <div class="dropdown">
+            <a href="#">HOME</a>
+            <div class="dropdown-content">
+                <a href="history.html">HISTORY</a>
+                <a href="features1.html">FEATURES</a>
+                <a href="myCars.html">PERSONAL</a>
+                <a href="community.html">COMMUNITY</a>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <main>
+        <div class="pageTitle">
+            <p>PERSONAL</p>
+        </div>
+     <div class="review-overview">
+        <p>Hold onto your excitement as I unveil the coolest rides on the block. Let's take a trip down memory lane of my history of cars as well as my friends. Explore some specs and additions to various cars and check out what's under the hood!</p>
+     </div>
+
+     <div class="button-container">
+        <div class = "review-button">
+            <img alt="OLTRA-V41" src="../images/oltrav41.jpg" id="img1">
+        </div>
+        <div class = "review-button">
+            <img alt="CRV HYBRID" src="../images/crvhybrid.jpg" id="img2">
+        </div>
+        <div class = "review-button">
+            <img alt="AKSHI" src="../images/akshi.jpg" id="img3">
+        </div>
+        <div class = "review-button">
+            <img alt="SAVYAAUDI" src="../images/savyaaudi.JPEG" id="img4">
+        </div>
+        <div class = "review-button">
+            <img alt="MERCEDES AMG" src="../images/mercedesamg.jpg" id="img5">
+        </div>
+        <div class = "review-button">
+            <img alt="MITSUBISHI" src="../images/mitsibushi.JPG" id="img6">
+        </div>
+        <div class = "review-button">
+            <img alt="SKYLINE" src="../images/sk2.JPG" id="img7">
+        </div>
+        <div class = "review-button">
+            <img alt="E-GNINE" src="../images/skyline.JPG" id="img8">
+        </div>
+        <div class = "review-button">
+            <img alt="CHALLENGER" src="../images/challenger.JPG" id="img9">
+        </div>
+        <div class = "review-button">
+            <img alt="E-GNINE" src="../images/skylineengine.JPG" id="img10">
+        </div>
+        <div class = "review-button">
+            <img alt="E-GNINE" src="../images/egnine1.JPG" id="img11">
+        </div>
+        <div class = "review-button">
+            <img alt="E-GNINE" src="../images/engine3.jpg" id="img12">
+        </div>
+
+     </div>     
+   
+     <script>
+        document.addEventListener("DOMContentLoaded", function(){
+    const hoverButtons = document.querySelectorAll(".review-button");
+
+    hoverButtons.forEach((button) => {
+        button.addEventListener("mouseover", function () {
+            const textOverlay = document.createElement("div");
+            textOverlay.className = "text-overlay";
+            
+            switch (button.querySelector("img").id) {
+                case "img1":
+                    textOverlay.innerHTML = `<p>TOYOTA RAV-4 2015 <br><br> This was my first ever car. Although I was never an SUV girl, this car was perfect for driving on the road with ease; It was spacious from the inside, giving good leg-space and comfort, and smooth from the outside for a great driving experience no matter how long the car ride is. We sold this car recently and bought a Hybrid Honda CRV Sports, however, the memories of this one will always stay with me.  </p>`;
+                    break;
+                case "img2":
+                    textOverlay.innerHTML = `<p>This is the 2023 HONDA CRV SPORTS-HYBRID. <br> This car is a practical yet dynamic choice. Its hybrid powertrain seamlessly switched between electric and gasoline modes, offering impressive fuel efficiency w/o compromising on performance. This is my second car- I love it's inside features that I can mess with such as the paddle shifters. Speed is subjective; some may say this car is slow but it consiting of a 2-liter 210 Horse power engine is not bad for speeding/surfing/swimming on inner roads or highways, making each ride enjoyable. </p>`;
+                    break;
+                case "img3":
+                    textOverlay.innerHTML = `<p>This is my friend's 2021 TOYOTA COROLLA. The Corolla's performance is enhanced with features like the available Dynamic Shift-CVT with paddle shifters for a more engaging driving experience, as well as available sport-tuned suspension for improved handling. It is reliable, fuel-efficient, and well-equipped compact sedan making it versatile and appealing.</p>`;
+                    break;
+                case "img4":
+                    textOverlay.innerHTML = `<p>This is the AUDI E-TRON GT. <br><br> Driving my cousin's Audi e-tron electric was like stepping into the future of automotive technology. The instant torque and silent acceleration of it redefined what I thought was possible in an electric vehicle. From the moment I pressed the accelerator, I felt the seamless power delivery and responsiveness that Audi is renowned for. The e-tron's all-electric powertrain made each drive a quiet and smooth experience, with no compromise on performance.
+</p>`;
+                    break;
+                case "img5":
+                    textOverlay.innerHTML = `<p>This is the C-Class MERCEDES AMG. <br> This was a marvel of engineering and luxury combined. Its sleek exterior design, adorned with AMG's distinctive styling cues, made a bold statement on the road. Under the hood, the turbocharged engine delivered breathtaking power, propelling the AMG from 0 to 60 mph in mere seconds. I owned this car for some time, unfortunately, my time with the AMG was cut short due to an accident. Despite the setback, the memories of those exhilarating drives remain etched in my mind.</p>`;
+                    break;
+                case "img6":
+                    textOverlay.innerHTML = `<p>This is a Mitsibushi EVO 2015 <br><br> This was a special memory for me because my friend took me here for out last meetup before he went to military. This car is equiped with an aftermarket intercooler for more power and a high level of fuel efficiency with cook features like the front lip and rear diffuser.</p>`;
+                    break;
+                case "img7":
+                    textOverlay.innerHTML = `<p>This is the wide-body HONDA SK2 <br><br> The SK2 is powered by a 2.5-liter inline-four engine, and the one you see here is not only modded to as a wide-body but as equiped with two spoilers- an additional duck spoiler.It has custom paint with certain parts covered with carbon fiber, giving it a sleek and fast appearance.</p>`;
+                    break;
+                case "img8":
+                    textOverlay.innerHTML = `<p>This is the NISSAN SKYLINE GT-R32. <br><br> The GT-R32 is powered by the RB26DETT engine, a 2.6-liter inline-six twin-turbocharged engine. It features an active aerodynamics system, including a rear spoiler that adjusts based on vehicle speed to optimize downforce and stability. It's equipped with the HICAS (High Capacity Actively Controlled Steering) four-wheel steering system, enhancing agility and cornering stability.</p>`;
+                    break;
+                case "img9":
+                    textOverlay.innerHTML = `<p>This is a CHALLENGER 392 SUPER-V SCATPACK. <br><br> This guy was on bags, giving it a unique suspension look. It has a rear diffuser and a duck built spoiler. It's vibrant paint and alloy rims stole the show. Though I have to mention the matching, but illegal tint looked really awesome.</p>`;
+                    break;
+                case "img10":
+                    textOverlay.innerHTML = `<p>This is the R32 NISSAN SKYLINE GT-R is powered by the RB26DETT engine, which is a 2.6-liter inline-six twin-turbocharged engine. <br><br> In this, the exhaust gases flow through the turbochargers to spin their turbines and then into the exhaust system for expulsion. It uses an air-to-air intercooler mounted at the front of the car to cool the compressed air from the turbochargers before it enters the engine.
+Cooler air is denser, providing more oxygen for combustion and improving engine efficiency and power. </p>`;
+                    break;
+                case "img11":
+                    textOverlay.innerHTML = `<p>This is the 09 NISSAN 370Z equiped with a 3.7-liter v6 engine. <br><br> It has a aftermarket turbocharger kit/superchargers to increase horsepower and torque significantly. It comes with a dual exhaust system, which can improve exhaust gas flow and contribute to a sportier exhaust note.</p>`;
+                    break;
+                case "img12":
+                    textOverlay.innerHTML = `<p>This is the MAZDA RX-7 that I saw during a car meet. <br> <br> Under the hood it has a rotary engine, meaning instead of pistons moving up and down in cylinders, the rotary engine uses triangular rotors that rotate in an oval-like chamber. It compresses fuel-air mixture in rotating chambers, making these engines known for their high power-to-weight ratio and compact size.</p>`;
+                    break;
+                default:
+                    textOverlay.innerHTML = `<p></p>`;
+            }
+
+            // Position and style the text overlay
+            textOverlay.style.position = "absolute";
+            textOverlay.style.top = "50%";
+            textOverlay.style.left = "40%";
+            textOverlay.style.transform = "translate(-40%, -50%)";
+            textOverlay.style.color = "rgb(255, 255, 255)";
+            textOverlay.style.padding = "10px";
+            textOverlay.style.borderRadius = "5px";
+            textOverlay.style.zIndex = "4";
+            textOverlay.style.fontSize = "1vw";
+
+
+            button.appendChild(textOverlay);
+            
+            button.querySelector("img").style.opacity = "0.07";
+            button.style.backgroundColor = "rgba(29, 28, 28, 0.742)";                
+            button.style.boxShadow = "0 8px 16px rgba(158, 155, 155, 0.406)"; 
+            button.style.transform = "scale(1.03)";
+
+        });
+
+        button.addEventListener("mouseout", function () {
+            button.querySelectorAll(".text-overlay").forEach((textOverlay) => {
+                textOverlay.remove(); 
+            });
+
+            button.querySelector("img").style.opacity = "";
+            button.style.backgroundColor = "";                 
+            button.style.boxShadow = "none";
+            button.style.transform = "scale(1.0)";
+        });
+    });
+});
+     </script>
+
+
+    </main>
+
+
+    <footer>
+        <div data-include="../components/clientFooter.html"></div> 
+
+    </footer>
+    <script src ="script.js"></script>
+    <script src ="../scripts/HTMLInclude.min.js"></script>
+</body>
+
+
+
+
+</html>

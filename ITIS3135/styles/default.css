@@ -178,3 +178,72 @@ figure {
     padding: 5px;
 
 }
+
+
+.slideshow-container {
+    position: relative;
+    top: 20px;
+    bottom: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+  
+.mySlides {
+    display: none;
+    width: 100%;
+}
+  
+  img {
+    width: 100%;
+    height: auto;
+}
+
+.buttons{
+    position: relative;
+    top: 50px;
+}
+  .prev {
+    cursor: pointer;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -30px;
+    color: goldenrod;
+    background-color:rgb(9, 139, 29);
+    font-size: 20px;
+    font-weight: bold;
+    user-select: none;
+}
+.next {
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -30px;
+    color: goldenrod;
+    background-color:rgb(9, 139, 29);
+    font-size: 20px;
+    font-weight: bold;
+    user-select: none;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+.caption {
+    text-align: center;
+    color: chocolate;
+    background-color: rgba(0, 0, 0, 0.877);
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 40vh;
+    max-width: 800px;
+    margin: auto;
+    font-weight: 800;
+}

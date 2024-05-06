@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundational Client Project Build</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class = "title">
+            <img src="../images/VEENA'S VROOM & VIEWS_transparent.png" alt="logo">
+            <!-- <p>VEENA'S VROOM & VIEWS</p> -->
+        </div>
+        <div class="dropdown">
+            <a href="#">HOME</a>
+            <div class="dropdown-content">
+                <a href="history.html">HISTORY</a>
+                <a href="features1.html">FEATURES</a>
+                <a href="myCars.html">PERSONAL</a>
+                <a href="community.html">COMMUNITY</a>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <main>
+        <div class="pageTitle">
+            <p>FEATURES - FRONT VIEW</p>
+            <p style="font-size: 17px; font-weight: 100;">HOVER OVER THE RED DOTS</p>
+        </div>
+
+
+        <div class="container-feat">
+            <img src = "../images/file (1).png" alt="Car Image" id="carImage">
+
+            <div class="rear-view-mirror">  </div>
+                <div class="description description1">
+                    <h4>REAR VIEW MIRROR</h4>
+                    <p>The rear view mirror is an essential safety feature that allows the driver to see what's happening behind the car without turning around. <br><br>
+                        It reflects the view from the rear of the car, helping the driver to monitor traffic conditions and vehicles approaching from behind.</p>
+                </div>
+
+            <div class="headlight">  </div>
+                <div class="description description2">
+                    <h4>HEADLIGHTS</h4>
+                    <p>Description: Headlights are front-facing lights that illuminate the road ahead during low-light conditions or at night. <br><br>
+                       They improve visibility for the driver and enhance the car's visibility to other road users, contributing to safety and navigation.</p>
+                </div>
+            <div class="mirrors">  </div>
+                <div class="description description3">
+                    <h4>SIDE MIRRORS</h4>
+                    <p>Side mirrors, also known as wing mirrors, provide visibility to the sides and rear of the car, enhancing situational awareness. <br><br>
+                       They reflect the view of adjacent lanes and areas not visible directly to the driver, aiding in lane changes, parking, and maneuvering. </p>
+                </div>
+            <div class="fuel">  </div>
+                <div class="description description4">
+                    <h4>FUEL TANK</h4>
+                    <p>The fuel tank is where the car stores its fuel, and placing it in the front is a common design for many vehicles.<br><br>
+                       Placing the fuel tank in the front balances the car's weight distribution, improves stability, and allows for efficient fuel delivery to the engine.</p>
+                </div>
+            <div class="bumper-fender">  </div>
+                <div class="description description5">
+                    <h4>BUMPER/FENDER</h4>
+                    <p>The fender or bumper is a protective component that surrounds the front and rear parts of the car, absorbing impact in collisions.<br><br>
+                        It helps minimize damage to the car's body and internal components by absorbing and dispersing impact forces during minor collisions.</p>
+                </div>
+            <div class="wheels">  </div>
+                <div class="description description6">
+                    <h4>WHEELS</h4>
+                    <p>Wheels are the circular components on which the car rests and moves, typically made of metal or alloy.<br><br>
+                       They support the vehicle's weight, provide traction for movement, and house the tires, which contribute to the car's handling and performance.</p>
+                </div>
+            <div class="hood">  </div>
+                <div class="description description7">
+                    <h4>HOOD</h4>
+                    <p>The hood, also called the bonnet, covers the engine compartment at the front of the car. <br><br>
+                        It protects the engine and other vital components from external elements, houses sound insulation, and contributes to aerodynamics.</p>
+                </div>
+            
+            <button onclick="navigateToFront()" id="front">FRONT</button>
+            <button onclick="navigateToRear()" id="rear">REAR</button>
+            <button onclick="navigateToInterior()" id="interior">INTERIOR</button>
+
+        
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div data-include="../components/clientFooter.html"></div> 
+
+    </footer>
+    <script src ="script.js"></script>
+    <script src ="../scripts/HTMLInclude.min.js"></script>
+</body>
+
+
+
+
+</html>

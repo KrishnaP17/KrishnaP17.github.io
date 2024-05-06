@@ -13,7 +13,13 @@
     {"name": "Array", "url": "arrays.html"},
     {"name": "Drawing", "url": "drawing.html"},
     {"name": "Client Project Pt1", "url": "project_overview.html"},
-    {"name": "Client Project Pt2", "url": "ClientProject/index.html"}
+    {"name": "Client Project Pt2", "url": "ClientProject/index.html"},
+    {"name": "Slideshow", "url": "slideshow.html"},
+    {"name": "Review 1", "url": "Review1.html"},
+    {"name": "Review 2", "url": "Review2.html"},
+    {"name": "Review 3", "url": "Review3.html"}
+
+
 
 
 ]

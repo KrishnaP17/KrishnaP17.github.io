@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundational Client Project Build</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class = "title">
+            <img src="../images/VEENA'S VROOM & VIEWS_transparent.png" alt="logo">
+            <!-- <p>VEENA'S VROOM & VIEWS</p> -->
+        </div>
+        <div class="dropdown">
+            <a href="#">HOME</a>
+            <div class="dropdown-content">
+                <a href="history.html">HISTORY</a>
+                <a href="features1.html">FEATURES</a>
+                <a href="myCars.html">PERSONAL</a>
+                <a href="community.html">COMMUNITY</a>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <main>
+        <div class="pageTitle">
+            <p>FEATURES - INTERIOR</p>
+            <p style="font-size: 17px; font-weight: 100;">HOVER OVER THE RED DOTS</p>
+        </div>
+
+
+        <div class="container-feat">
+            <img src = "../images/interiorfinal.png" alt="Car Image" id="carImage">
+            <div class="dashboard">  </div>
+                <div class="description description14">
+                    <h4>DASHBOARD</h4>
+                    <p>It is the panel located behind the steering wheel that houses various instruments and controls. It provides vital information to the driver, such as speed, fuel level, engine temperature, odometer readings, and warning lights for indicators like engine problems or low tire pressure. It also includes controls for climate settings, audio systems, and vehicle settings.</p>
+                </div>
+            <div class="steering-wheel">  </div>
+                <div class="description description15">
+                    <h4>STEERING-WHEEL</h4>
+                    <p>It is a crucial component that allows the driver to control the direction of the vehicle. It is typically connected to the steering column and the steering mechanism, enabling the driver to turn the wheels left or right, thus steering the car. Modern steering wheels often include additional controls for features like audio, cruise control, and voice commands.</p>
+                </div>
+            <div class="gear">  </div>
+                <div class="description description16">
+                    <h4>GEAR-SHIFT STICK</h4>
+                    <p>System in a car that allows the driver to control the vehicle's speed and power output by selecting different gears. Most cars have an automatic transmission that shifts gears automatically, while some have a manual transmission that requires the driver to manually shift gears using a gear lever or paddle shifters. Gears play a crucial role in optimizing fuel efficiency, engine performance, and overall driving experience.</p>
+                </div>
+            <div class="infotainment">  </div>
+                <div class="description description17">
+                    <h4>INFOTAINMENT SYSTEM</h4>
+                    <p>Integrates entertainment, communication, and navigation features into one interface. It typically includes a touchscreen display or multimedia interface that allows the driver and passengers to access music, radio, navigation maps, phone calls, messaging, and sometimes vehicle settings. Modern infotainment systems may also support smartphone integration, voice commands, and advanced connectivity options.</p>
+                </div>
+            <div class="storage">  </div>
+                <div class="description description18">
+                    <h4>STORAGE COMPARTMENT</h4>
+                    <p>Provide space to store personal items, such as phones, keys, sunglasses, water bottles, and other essentials. These compartments can include glove boxes, center consoles, door pockets, cup holders, and trunk storage areas. They enhance convenience and organization within the vehicle, keeping items secure and easily accessible during travel.</p>
+                </div>
+            <div class="saftey-features">  </div>
+                <div class="description description19">
+                    <h4>SAFTEY-FEATURES</h4>
+                    <p style="font-size: 11px">Airbags: Deploy upon impact to cushion occupants during a collision.<br>
+                        Antilock Braking System (ABS): Prevents wheels from locking up during hard braking, maintaining steering control.<br>
+                        Electronic Stability Control (ESC): Helps maintain vehicle stability and prevent skidding.<br>
+                        Adaptive Cruise Control: Automatically adjusts vehicle speed to maintain a safe distance from the vehicle ahead.<br>
+                        Lane Departure Warning/Assist: Alerts the driver or assists in steering to prevent unintentional lane departure.<br>
+                        Blind Spot Monitoring: Alerts the driver to vehicles in blind spots during lane changes.<br>
+                        Collision Avoidance Systems: Automatically applies brakes or steers to avoid collisions.<br>
+                        These features work together to reduce the risk of accidents and protect occupants in the event of a crash.</p>
+
+                </div>
+            <div class="air-conditioning">  </div>
+                <div class="description description20">
+                    <h4>AIR-COOLING SYSTEM</h4>
+                    <p>Regulates interior temperature and humidity levels to provide a comfortable cabin environment. It includes components such as compressors, evaporators, condensers, and refrigerant fluids. Air conditioning enhances comfort during hot weather by cooling the interior and removing excess moisture from the air.</p>
+
+                </div>
+            <div class="moonroof">  </div>
+                <div class="description description21">
+                    <h4>MOONROOF</h4>
+                    <p> It's the transparent or opaque panel installed in the roof of a car, providing natural light, ventilation, and an open-air experience. It differs from a sunroof in that a sunroof typically slides open, while a moonroof may be fixed or have a tilt function for venting.</p>
+                </div>
+            
+        
+            
+                <button onclick="navigateToFront()" id="front">FRONT</button>
+                <button onclick="navigateToRear()"id="rear">REAR</button>
+                <button onclick="navigateToInterior()" id="interior">INTERIOR</button>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div data-include="../components/clientFooter.html"></div> 
+
+    </footer>
+    <script src ="script.js"></script>
+    <script src ="../scripts/HTMLInclude.min.js"></script>
+</body>
+
+
+
+
+</html>

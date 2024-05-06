@@ -8,18 +8,21 @@
 </head>
 
 <body>
+    <!-- convert header to dynamic with javascript -->
+    
     <header>
         <div class = "title">
-            <img src="../images/VEENA'S VROOM & VIEWS_transparent.png" height="200">
+            <img src="../images/VEENA'S VROOM & VIEWS_transparent.png" alt="logo">
             <!-- <p>VEENA'S VROOM & VIEWS</p> -->
         </div>
         <div class="dropdown">
             <a href="index.html">HOME</a>
             <div class="dropdown-content">
                 <a href="history.html">HISTORY</a>
-                <a href="features.html">FEATURES</a>
-                <a href="comparison.html">COMPARISON</a>
-                <a href="reviews.html">REVIEWS</a>
+                <a href="features1.html">FEATURES</a>
+                <a href="myCars.html">PERSONAL</a>
+                <a href="community.html">COMMUNITY</a>
+
             </div>
         </div>
 
@@ -27,9 +30,13 @@
 
 
     <main>
+        <div class="pageTitle">
+            <p>HOME</p>
+        </div>
+
         <div class = "home-container">
             <div class= "left-top">
-                <img src="https://pngimg.com/d/mustang_PNG60.png">
+                <img src="https://pngimg.com/d/mustang_PNG60.png" alt="mustang">
                 
             </div>
             <div class = "top-right">
@@ -42,12 +49,34 @@
         </div>
 
         <div class="container">
-            <div class="performance"></div>
+            <div class="performance">
+                <h1>PERFORMANCE OVERVIEW</h1>
+                <h3>A car's performance typically refers to its ability to accelerate, reach high speeds, handle well on different road conditions, and maintain stability and control during driving maneuvers</h3>
+                <p>There are various types of cars, and along with their build, their performance is what differentiates them from each other. On the right are examples of four different types out of the many. <br><br> Car's performance is defined by their features and adaptability which sets its core in their engines. <br><br> For an electric vehicle, the engine is powered by an electric motor or battery; which means that it doesn't require a fuel, rather a battery that would need to be charged overnight. A hybrid car however is powered by an electric motor and a fuel source; once the battery is about to die, the engine will switch to fuel mode while the battery charges during no-motion. <br><br> For a muscle car, the engine is powered by a gas or diesel engine. The gas engine is more efficient than the diesel engine. A luxury car's engine usually depends on the fuel type, it can have a fuel engine or electric.</p>
+                <p><b>There are various types of engines:</b></p>
+
+                    <ul>
+                        <li><b>A v4 Engine/  4-Cyls:</b>  are relatively rare in modern cars. They were more common in older vehicles and some motorcycles. Due to their compact size, they were used in smaller cars and motorcycles, hence their good fuel-efficieny.</li>
+                        <li><b>A v6 Engine / 6-Cyls:</b>  offers a balance between power and fuel efficiency. Commonly used in mid-sized sedans, SUVs, and some sports cars. Muscle cars usually have v6 or v8s. </li>
+                        <li><b>A v8 Engine / 8-Cyls::</b> is known for higher power and torque output. Commonly used in larger vehicles, high-performance cars, and trucks for towing capacity and acceleration. v8s can however consume more fuel due to their larger cylinders.</li>
+                        <li>Cars can usually go up to v10s and v12s, however those are built to produce more power and torque for higher speeds, consuming more fuel. Cars get modified to fit people's needs and desires, therefore is isn't necessary to use v4 engines in small cars, it all depends on the modifier.</li>
+                    </ul>
+                
+                <h3>Click on any of the cars on the right to see their car type's performance data.</h3>
+            </div>
             <div class="chunk">
-                <div class="box box1"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+                <div class="box box1">
+                    <h3>Tesla Model S (Electric Vehicle)</h3>
+                </div>
+                <div class="box box2">
+                    <h3>Ford Mustang GT (Muscle Car)</h3>
+                </div>
+                <div class="box box3">
+                    <h3>Toyota Prius (Hybrid Vehicle)</h3>
+                </div>
+                <div class="box box4">
+                    <h3>BMW M5 (Luxury Performance Sedan)</h3>
+                </div>
             </div>
         </div>
         
@@ -61,10 +90,14 @@
 
 
     <footer>
+        <div data-include="../components/clientFooter.html"></div> 
 
     </footer>
+    <script src ="script.js"></script>
+    <script src ="../scripts/HTMLInclude.min.js"></script>
 </body>
 
-<script src ="script.js"></script>
+
+
 
 </html>

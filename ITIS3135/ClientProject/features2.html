@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundational Client Project Build</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class = "title">
+            <img src="../images/VEENA'S VROOM & VIEWS_transparent.png" alt="logo">
+            <!-- <p>VEENA'S VROOM & VIEWS</p> -->
+        </div>
+        <div class="dropdown">
+            <a href="#">HOME</a>
+            <div class="dropdown-content">
+                <a href="history.html">HISTORY</a>
+                <a href="features1.html">FEATURES</a>
+                <a href="myCars.html">PERSONAL</a>
+                <a href="community.html">COMMUNITY</a>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <main>
+        <div class="pageTitle">
+            <p>FEATURES - REAR VIEW</p>
+            <p style="font-size: 17px; font-weight: 100;">HOVER OVER THE RED DOTS</p>
+        </div>
+
+
+        <div class="container-feat">
+            <img src = "../images/rearCar.png" alt="Car Image" id="carImage">
+
+            <div class="rear-camera">  </div>
+                <div class="description description8">
+                    <h4>REAR CAMERA</h4>
+                    <p>The rear camera helps the driver avoid collisions with obstacles, pedestrians, or other vehicles while reversing. It enhances safety and reduces blind spots, especially in larger vehicles or vehicles with limited rear visibility.<br>
+                        The rear camera is typically integrated into the car's infotainment system or dashboard display. When the driver shifts into reverse gear, the rear camera feed automatically appears on the screen, providing a clear view of the rear surroundings.</p>
+                </div>
+            <div class="rear-fascia">  </div>
+                <div class="description description9">
+                    <h4>REAR FASCIA</h4>
+                    <p style="font-size: 13px">The rear fascia refers to the rear portion of a vehicle's body, including the bumper, taillights, and other design elements.<br>
+                       The rear fascia serves both aesthetic and functional purposes. It protects the rear of the vehicle from damage in minor collisions and adds to the overall design and aerodynamics of the car.<br>
+                       The rear fascia is integrated into the car's overall body structure and design, providing a streamlined appearance while also housing essential components like taillights, reflectors, and parking sensors.</p>
+
+                </div>
+            <div class="trunk">  </div>
+                <div class="description description10">
+                    <h4>TRUNK</h4>
+                    <p>The trunk provides storage space for luggage, groceries, equipment, and other items. It keeps belongings secure and protected from weather conditions.<br>
+                        The trunk is integrated into the car's body and is accessible through a hinged lid or hatchback door. It often features a light, tie-down points, and may have additional functionalities such as a spare tire compartment or a power-operated opening/closing mechanism.</p>
+                </div>
+            <div class="exhaust">  </div>
+                <div class="description description11">
+                    <h4>EXHAUST</h4>
+                    <p style="font-size: 13px">The exhaust system includes pipes, mufflers, and catalytic converters responsible for expelling exhaust gases from the engine.<br>
+                        The exhaust system removes harmful gases produced during combustion and reduces engine noise. It plays a crucial role in maintaining engine performance, fuel efficiency, and emissions control.<br>
+                        The exhaust system is integrated into the car's chassis and engine components, routing exhaust gases away from the engine bay and cabin. Modern exhaust systems may also include emissions control devices like particulate filters and selective catalytic reduction (SCR) systems.</p>
+                </div>
+            <div class="brake-light">  </div>
+                <div class="description description12">
+                    <h4>BRAKE LIGHT</h4>
+                    <p style="font-size: 13px">Brake lights are red lights located at the rear of a vehicle that illuminate when the brakes are applied.<br>
+                        Brake lights alert other drivers and pedestrians when the vehicle is slowing down or stopping. They improve safety by signaling braking intentions and helping prevent rear-end collisions.<br>
+                        Brake lights are integrated into the rear fascia of the car, typically above or beside the taillights. They are wired to the brake pedal switch and activate whenever the brakes are engaged.</p>
+                </div>
+            <div class="tail-light">  </div>
+                <div class="description description13">
+                    <h4>TAIL LIGHTS</h4>
+                    <p style="font-size: 13px">Tail lights are rear lights that illuminate when the vehicle's headlights are turned on or when the brake lights are activated.<br>
+                        Tail lights improve visibility of the vehicle at night or in low-light conditions. They indicate the presence, size, and position of the vehicle to other drivers, enhancing safety on the road.<br>
+                        Tail lights are integrated into the rear lighting system of the car, usually positioned alongside the brake lights. They are connected to the vehicle's electrical system and controlled based on driving conditions and user inputs.</p>
+                </div>
+
+        
+            
+                <button onclick="navigateToFront()" id="front">FRONT</button>
+                <button onclick="navigateToRear()"id="rear">REAR</button>
+                <button onclick="navigateToInterior()" id="interior">INTERIOR</button>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div data-include="../components/clientFooter.html"></div> 
+
+    </footer>
+    <script src ="script.js"></script>
+    <script src ="../scripts/HTMLInclude.min.js"></script>
+</body>
+
+
+
+
+</html>
